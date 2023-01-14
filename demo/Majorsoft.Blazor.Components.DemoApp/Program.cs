@@ -39,7 +39,7 @@ namespace Majorsoft.Blazor.Components.DemoApp
 			builder.Services.AddNotifications();
 
 			builder.Logging.AddBrowserConsole()
-				.SetMinimumLevel(LogLevel.Debug).AddFilter("Microsoft", LogLevel.Information);
+				.SetMinimumLevel(LogLevel.None).AddFilter("Microsoft", LogLevel.Information);
 
 			await builder.Build().RunAsync();
 		}
